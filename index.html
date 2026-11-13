@@ -76,6 +76,8 @@
   }
   ul.items li::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--amber); flex: none; transform: translateY(-1px); }
   ul.items li small { color: var(--muted); display: block; font-size: .84rem; }
+  ul.items li a { color: var(--accent); text-decoration: none; font-weight: 600; }
+  ul.items li a:hover { text-decoration: underline; }
   .note {
     margin-top: 40px;
     background: var(--accent-soft);
@@ -120,6 +122,151 @@
       <div class="card">
         <h3>האתר הזה <span class="tag build">גרסה 1</span></h3>
         <p>המרכז שאתה מסתכל עליו עכשיו - נבנה ביחד, ומתעדכן כל הזמן מהשיחה.</p>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>המרכז · דף הבית</title>
+<meta name="description" content="מרכז אישי: פרויקטים, פריטים פתוחים, מסמכים וידע - הכל במקום אחד.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0e1116;
+    --card: #171c24;
+    --card-border: #232b36;
+    --text: #e8edf3;
+    --muted: #9aa7b5;
+    --accent: #4da3ff;
+    --accent-soft: rgba(77, 163, 255, .12);
+    --green: #3ddc97;
+    --amber: #ffb454;
+    --pink: #ff7eb6;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Heebo', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 24px 18px 64px; }
+  header { padding: 28px 0 8px; }
+  .badge {
+    display: inline-block;
+    font-size: .8rem; font-weight: 500;
+    color: var(--amber);
+    background: rgba(255, 180, 84, .1);
+    border: 1px solid rgba(255, 180, 84, .35);
+    border-radius: 999px;
+    padding: 3px 12px;
+    margin-bottom: 14px;
+  }
+  h1 { font-size: 2rem; font-weight: 800; letter-spacing: -.5px; }
+  .sub { color: var(--muted); margin-top: 6px; font-size: 1.02rem; }
+  nav.toc {
+    margin-top: 20px;
+    display: flex; flex-wrap: wrap; gap: 8px;
+  }
+  nav.toc a {
+    font-size: .84rem; color: var(--accent);
+    background: var(--accent-soft);
+    border: 1px solid rgba(77, 163, 255, .25);
+    border-radius: 999px;
+    padding: 4px 12px;
+    text-decoration: none;
+  }
+  section { margin-top: 40px; }
+  h2 {
+    font-size: 1.15rem; font-weight: 700;
+    display: flex; align-items: center; gap: 10px;
+    margin-bottom: 16px;
+  }
+  h2 .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--accent); flex: none; }
+  .cards { display: grid; gap: 12px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 14px;
+    padding: 16px 18px;
+  }
+  .card h3 { font-size: 1.02rem; font-weight: 700; display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+  .card p { color: var(--muted); font-size: .94rem; margin-top: 4px; }
+  .card ul { margin-top: 8px; padding-inline-start: 18px; color: var(--muted); font-size: .94rem; display: grid; gap: 4px; }
+  .tag {
+    font-size: .72rem; font-weight: 500;
+    padding: 2px 10px; border-radius: 999px; flex: none;
+  }
+  .tag.live { color: var(--green); background: rgba(61, 220, 151, .1); border: 1px solid rgba(61, 220, 151, .3); }
+  .tag.build { color: var(--accent); background: var(--accent-soft); border: 1px solid rgba(77, 163, 255, .3); }
+  .tag.open { color: var(--amber); background: rgba(255, 180, 84, .1); border: 1px solid rgba(255, 180, 84, .3); }
+  ul.items { list-style: none; display: grid; gap: 10px; }
+  ul.items li {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 13px 16px;
+    font-size: .96rem;
+    display: flex; align-items: baseline; gap: 10px;
+  }
+  ul.items li::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--amber); flex: none; transform: translateY(-1px); }
+  ul.items li small { color: var(--muted); display: block; font-size: .84rem; }
+  ul.items li a { color: var(--accent); text-decoration: none; font-weight: 600; }
+  ul.items li a:hover { text-decoration: underline; }
+  .ask { color: var(--muted); font-size: .78rem; border: 1px solid var(--card-border); border-radius: 999px; padding: 1px 9px; white-space: nowrap; }
+  .note {
+    margin-top: 40px;
+    background: var(--accent-soft);
+    border: 1px solid rgba(77, 163, 255, .25);
+    border-radius: 14px;
+    padding: 16px 18px;
+    font-size: .94rem;
+  }
+  .note b { color: var(--accent); }
+  footer {
+    margin-top: 48px; padding-top: 18px;
+    border-top: 1px solid var(--card-border);
+    color: var(--muted); font-size: .82rem;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <span class="badge">גרסה 2 · נבנית יחד, צעד אחר צעד</span>
+    <h1>המרכז</h1>
+    <p class="sub">פרויקטים, פריטים פתוחים, מסמכים וידע - הכל במקום אחד. השיחה נשארת בוואטסאפ; האתר הוא הבית.</p>
+    <nav class="toc">
+      <a href="#projects">פרויקטים</a>
+      <a href="#open">פתוחים</a>
+      <a href="#links">קישורים</a>
+      <a href="#knowledge">מסמכים וידע</a>
+      <a href="#about">מה יודעים עליי</a>
+    </nav>
+  </header>
+
+  <section id="projects">
+    <h2><span class="dot"></span>פרויקטים פעילים</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>מערכת הסוכנים העצמאית <span class="tag live">פעיל</span></h3>
+        <p>מערכת של 10 סוכנים על Claude Code עם שכבת הרשאות: פעולות בלתי הפיכות, יוצאות או בתשלום נעצרות לאישור ידני, עם יומן ביקורת מוצפן.</p>
+      </div>
+      <div class="card">
+        <h3>אתר מעקב הטיולים <span class="tag live">פעיל</span></h3>
+        <p>אתר טיולים פרטי על שרת ענן, עם תשתית GitHub מסביב - תכנון, מסלולים ולוגיסטיקה של כל טיול במקום אחד.</p>
+      </div>
+      <div class="card">
+        <h3>CashCal <span class="tag build">בבנייה</span></h3>
+        <p>כרטיס החיוב הביתי המרכזי - ההחלטה התקבלה, וההטמעה בעבודה.</p>
+      </div>
+      <div class="card">
+        <h3>האתר הזה <span class="tag build">גרסה 2</span></h3>
+        <p>המרכז שאתה מסתכל עליו עכשיו - נבנה ביחד, ומתעדכן כל הזמן מהשיחה.</p>
       </div>
     </div>
   </section>
@@ -133,26 +280,99 @@
     </ul>
   </section>
 
-  <section id="docs">
-    <h2><span class="dot" style="background: var(--green);"></span>מסמכים ומחקרים</h2>
+  <section id="links">
+    <h2><span class="dot" style="background: var(--green);"></span>קישורים מהירים</h2>
+    <ul class="items">
+      <li><span><a href="https://docs.google.com/spreadsheets/d/1wT-4xhpIvkKPCo3_6r6B7rTpmHpTGGnbfjlEE4d03TQ/edit">רשימת הקניות המשותפת</a><small>גיליון Google - נפתח אחרי כניסה לחשבון</small></span></li>
+      <li><span><a href="https://docs.google.com/spreadsheets/d/18BXWtxQ9skjxrj54Hikh2IApM_xV5dgB5X90fDn8ZI0/edit">גיליון הכושר והתזונה</a><small>תוכנית האימונים, יומן אימונים ויומן תזונה - נפתח אחרי כניסה לחשבון</small></span></li>
+    </ul>
+  </section>
+
+  <section id="knowledge">
+    <h2><span class="dot" style="background: var(--pink);"></span>מסמכים וידע</h2>
     <div class="cards">
       <div class="card">
-        <h3>מסמכי טיולים</h3>
-        <p>דפי תכנון לכל יעד - לוגיסטיקה, קצב יומי, אוכל ופרקטיקות. מתעדכן בזמן אמת מהשיחה.</p>
+        <h3>כושר ותזונה</h3>
+        <p>תוכנית חיטוב אישית: 3 אימוני כוח ו־2 אירובי בשבוע, יומן אימונים ותזונה, וסיכום שבועי כל יום שישי. התוכנית מתקדמת רק על דיווח אימון מהשעון.</p>
       </div>
       <div class="card">
-        <h3>מחקרים</h3>
-        <p>מחקרי רקע והשוואות שנעשו לאורך הזמן - כרטיסי אשראי, ביטוחים, שירותים ועוד.</p>
+        <h3>קפה</h3>
+        <p>ציוד ביתי: ECM Mechanika Slim עם מטחנת Lagom Casa. יעד חילוץ 25-30 שניות, הערות dial-in לכל פול, ומועדון הפולים הקהילתי "המעגל".</p>
+      </div>
+      <div class="card">
+        <h3>רישיון סקיפר (משיט 30)</h3>
+        <p>מבחן מכונאות עבר. ימאות ג' בתהליך: חומרי לימוד, שאלות תרגול וסטטוס הרשמה - הכל מתועד.</p>
+      </div>
+      <div class="card">
+        <h3>מסמכי טיולים</h3>
+        <p>דף תכנון לכל יעד: לוגיסטיקה של יום הטיסה, קצב יום-יום, בחירות אוכל ופרקטיקות. מתעדכן תוך כדי התכנון.</p>
+      </div>
+      <div class="card">
+        <h3>מחקרים והשוואות</h3>
+        <p>כרטיסי אשראי, ביטוחים, מוצרים וספקים - כל מחקר עם ההמלצה, החלופות והסיבה.</p>
       </div>
       <div class="card">
         <h3>סיכומים שוטפים</h3>
-        <p>סיכומי מניות יומיים, עדכוני ספורט וסיכומי כושר שבועיים - הארכיון יאוכלס כאן בהמשך.</p>
+        <p>סיכום מניות יומי, עדכוני ספורט על הקבוצות שלי, וסיכום כושר שבועי.</p>
       </div>
     </div>
+    <p class="sub" style="margin-top: 12px; font-size: .88rem;">המסמכים עצמם נשארים פרטיים. לכל דבר מהרשימה - <b>בקש בצ'אט</b> והוא מגיע אליך.</p>
+  </section>
+
+  <section id="about">
+    <h2><span class="dot" style="background: var(--green);"></span>מה אני יודעת עליך</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>זהות</h3>
+        <ul>
+          <li>אדם יוסף, גר בגבעתיים</li>
+          <li>נשוי לקים, אבא לתום ואביב</li>
+          <li>מנהל מוצר בכיר בתחום הסייבר, עם רקע הנדסי ו־MBA מ־NYU Stern</li>
+          <li>אזרחות ישראלית ופורטוגלית</li>
+          <li>בונה דברים בעצמו - מערכת סוכנים אוטונומית משלו על Claude Code</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>איך אוהב שעובדים איתו</h3>
+        <ul>
+          <li>עברית, בוואטסאפ - זה הבית</li>
+          <li>צעד אחר צעד, בלי זריקת רשימת לינקים</li>
+          <li>הודעות קוליות כשהוא בנהיגה</li>
+          <li>המלצה אחת ברורה עם הסיבה, לא עוד רשימה</li>
+          <li>אימונים מפורטים כמו מדריך בחדר כושר, עם משקלים ודגשים</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>טעם</h3>
+        <ul>
+          <li>פלצן קפה - מחפש בריסטות אלופים וקונה פולים בכל טיול</li>
+          <li>מותג מוכר ואלגנטי מנצח זול וגנרי; בפריטים פשוטים - value for money</li>
+          <li>לא אוכל דגים</li>
+          <li>מסעדות: ניקיון קודם כל, דירוג 4.5+ עם 500+ ביקורות, משפחתי ולא פלצני</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>ספורט</h3>
+        <ul>
+          <li>ליברפול, מכבי תל אביב, הפילדלפיה איגלס וברצלונה</li>
+          <li>עוקב אחרי הליגות האנגלית, הספרדית והישראלית</li>
+          <li>קבוצת פנטזי NFL ב־Sleeper</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>שגרה וציוד</h3>
+        <ul>
+          <li>סיכום מניות כל בוקר, עדכוני ספורט, סיכום כושר בימי שישי</li>
+          <li>iPhone 16 Pro Max, MacBook Pro M4 ו־Apple Watch Series 9</li>
+          <li>מתאמן בקאנטרי החשמונאים ורץ בחוץ</li>
+        </ul>
+      </div>
+    </div>
+    <p class="sub" style="margin-top: 12px; font-size: .88rem;">משהו פה לא מדויק, או משהו שחסר? אמור בצ'אט וזה מתעדכן.</p>
   </section>
 
   <div class="note">
-    <b>איך עובדים עם האתר?</b> זו גרסה ראשונה בלבד. כל שינוי - מבנה, תוכן, עיצוב, מה נשאר פרטי ומה נכנס - מתאם בשיחה הרגילה בוואטסאפ, והאתר מתעדכן בהתאם.
+    <b>איך עובדים עם האתר?</b> האתר נבנה בשיתוף, וכל שינוי - מבנה, תוכן, עיצוב, מה נשאר פרטי ומה נכנס - מתאם בשיחה הרגילה בוואטסאפ, והאתר מתעדכן בהתאם.
   </div>
 
   <footer>
