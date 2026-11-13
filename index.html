@@ -4,129 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>המרכז · דף הבית</title>
-<meta name="description" content="מרכז אישי: פרויקטים, פריטים פתוחים, מסמכים ומחקרים - הכל במקום אחד.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --bg: #0e1116;
-    --card: #171c24;
-    --card-border: #232b36;
-    --text: #e8edf3;
-    --muted: #9aa7b5;
-    --accent: #4da3ff;
-    --accent-soft: rgba(77, 163, 255, .12);
-    --green: #3ddc97;
-    --amber: #ffb454;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: 'Heebo', system-ui, -apple-system, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-  }
-  .wrap { max-width: 720px; margin: 0 auto; padding: 24px 18px 64px; }
-  header { padding: 28px 0 8px; }
-  .badge {
-    display: inline-block;
-    font-size: .8rem; font-weight: 500;
-    color: var(--amber);
-    background: rgba(255, 180, 84, .1);
-    border: 1px solid rgba(255, 180, 84, .35);
-    border-radius: 999px;
-    padding: 3px 12px;
-    margin-bottom: 14px;
-  }
-  h1 { font-size: 2rem; font-weight: 800; letter-spacing: -.5px; }
-  .sub { color: var(--muted); margin-top: 6px; font-size: 1.02rem; }
-  section { margin-top: 40px; }
-  h2 {
-    font-size: 1.15rem; font-weight: 700;
-    display: flex; align-items: center; gap: 10px;
-    margin-bottom: 16px;
-  }
-  h2 .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--accent); flex: none; }
-  .cards { display: grid; gap: 12px; }
-  .card {
-    background: var(--card);
-    border: 1px solid var(--card-border);
-    border-radius: 14px;
-    padding: 16px 18px;
-  }
-  .card h3 { font-size: 1.02rem; font-weight: 700; display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
-  .card p { color: var(--muted); font-size: .94rem; margin-top: 4px; }
-  .tag {
-    font-size: .72rem; font-weight: 500;
-    padding: 2px 10px; border-radius: 999px; flex: none;
-  }
-  .tag.live { color: var(--green); background: rgba(61, 220, 151, .1); border: 1px solid rgba(61, 220, 151, .3); }
-  .tag.build { color: var(--accent); background: var(--accent-soft); border: 1px solid rgba(77, 163, 255, .3); }
-  .tag.open { color: var(--amber); background: rgba(255, 180, 84, .1); border: 1px solid rgba(255, 180, 84, .3); }
-  ul.items { list-style: none; display: grid; gap: 10px; }
-  ul.items li {
-    background: var(--card);
-    border: 1px solid var(--card-border);
-    border-radius: 12px;
-    padding: 13px 16px;
-    font-size: .96rem;
-    display: flex; align-items: baseline; gap: 10px;
-  }
-  ul.items li::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--amber); flex: none; transform: translateY(-1px); }
-  ul.items li small { color: var(--muted); display: block; font-size: .84rem; }
-  ul.items li a { color: var(--accent); text-decoration: none; font-weight: 600; }
-  ul.items li a:hover { text-decoration: underline; }
-  .note {
-    margin-top: 40px;
-    background: var(--accent-soft);
-    border: 1px solid rgba(77, 163, 255, .25);
-    border-radius: 14px;
-    padding: 16px 18px;
-    font-size: .94rem;
-  }
-  .note b { color: var(--accent); }
-  footer {
-    margin-top: 48px; padding-top: 18px;
-    border-top: 1px solid var(--card-border);
-    color: var(--muted); font-size: .82rem;
-    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
-  }
-</style>
-</head>
-<body>
-<div class="wrap">
-
-  <header>
-    <span class="badge">גרסה 1 · נבנית יחד, צעד אחר צעד</span>
-    <h1>המרכז</h1>
-    <p class="sub">פרויקטים, פריטים פתוחים, מסמכים ומחקרים - הכל במקום אחד. השיחה נשארת בוואטסאפ; האתר הוא הבית.</p>
-  </header>
-
-  <section id="projects">
-    <h2><span class="dot"></span>פרויקטים פעילים</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>מערכת הסוכנים העצמאית <span class="tag live">פעיל</span></h3>
-        <p>מערכת של 10 סוכנים על Claude Code עם שכבת הרשאות: פעולות בלתי הפיכות, יוצאות או בתשלום נעצרות לאישור ידני, עם יומן ביקורת מוצפן.</p>
-      </div>
-      <div class="card">
-        <h3>אתר מעקב הטיולים <span class="tag live">פעיל</span></h3>
-        <p>אתר טיולים פרטי על שרת ענן, עם תשתית GitHub מסביב - תכנון, מסלולים ולוגיסטיקה של כל טיול במקום אחד.</p>
-      </div>
-      <div class="card">
-        <h3>CashCal <span class="tag build">בבנייה</span></h3>
-        <p>כרטיס החיוב הביתי המרכזי - ההחלטה התקבלה, וההטמעה בעבודה.</p>
-      </div>
-      <div class="card">
-        <h3>האתר הזה <span class="tag build">גרסה 1</span></h3>
-        <p>המרכז שאתה מסתכל עליו עכשיו - נבנה ביחד, ומתעדכן כל הזמן מהשיחה.</p>
-<html lang="he" dir="rtl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>המרכז · דף הבית</title>
 <meta name="description" content="מרכז אישי: פרויקטים, פריטים פתוחים, מסמכים וידע - הכל במקום אחד.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -348,7 +225,7 @@
           <li>פלצן קפה - מחפש בריסטות אלופים וקונה פולים בכל טיול</li>
           <li>מותג מוכר ואלגנטי מנצח זול וגנרי; בפריטים פשוטים - value for money</li>
           <li>לא אוכל דגים</li>
-          <li>מסעדות: ניקיון קודם כל, דירוג 4.5+ עם 500+ ביקורות, משפחתי ולא פלצני</li>
+          <li>מסעדות: ניקיון קודם כל, דירוג מעל 4.5 עם מעל 500 ביקורות, משפחתי ולא פלצני</li>
         </ul>
       </div>
       <div class="card">
